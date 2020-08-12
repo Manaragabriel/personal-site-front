@@ -6,6 +6,7 @@
 
 body{
     font-family: Roboto;
+    overflow-x: hidden;
 }
 
 .bg-dark{
@@ -18,10 +19,15 @@ body{
 .nav-link{
     font-size: 0.8125em !important;
     font-weight: bold;
-}
+} 
 #about{
     min-height: 94vh;
     background-color: #1b1d1f;
+}
+
+#portifolio{
+  background-color: #BEC0C3;
+  min-height: 94vh;
 }
 
 .navbar{
@@ -66,8 +72,8 @@ body{
  */
  @-webkit-keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
       opacity: 0;
     }
     100% {
@@ -79,8 +85,8 @@ body{
 
 @keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
       opacity: 0;
     }
     100% {
@@ -93,8 +99,8 @@ body{
 
 @-webkit-keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
       opacity: 0;
     }
     100% {
@@ -105,8 +111,8 @@ body{
   }
   @keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
       opacity: 0;
     }
     100% {

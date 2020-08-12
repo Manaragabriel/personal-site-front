@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 
 
 function HomePage() {
-   
+  const [isVisible, setIsVisible] = useState(false);
+  
   useEffect(function ()  {
       window.onscroll = onScroll
     
@@ -13,6 +14,10 @@ function HomePage() {
 
   const onScroll = (event) => {
     console.log(document.documentElement.scrollTop)
+    if(document.documentElement.scrollTop > 400){
+      setIsVisible(true);
+    }
+    console.log(isVisible);
   }
  
 
@@ -35,7 +40,16 @@ function HomePage() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> 
+          </section>
+
+          <section id="portifolio" class="py-4">
+            <div class="container">
+                <h4  className={ 'text-center  font-weight-bold ' + (isVisible ? 'visible slide-in-right ' : 'invisible')  }>Meu portifólio</h4>
+                <div class="row">
+                  
+                </div>
+            </div>
           </section>
         </div>
     )
