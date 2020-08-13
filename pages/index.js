@@ -43,7 +43,7 @@ function HomePage() {
               </div> 
           </section>
 
-          <section id="portifolio" class="py-4">
+          <section id="portifolio" class="py-5">
             <div class="container">
                 <h3  className={ 'text-center  font-weight-bold ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Meu portifólio</h3>
                 <div class="row">
@@ -66,6 +66,57 @@ function HomePage() {
                 </div>
             </div>
           </section>
+
+          <section id="conhecimentos" class="py-5">
+            <div class="container">
+                <h3  className={ 'text-center  font-weight-bold ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Conhecimentos</h3>
+                <div class="row">
+                  <div class="col-lg-4">
+                      <div class="image-container">
+                          <img src="/php.png" class="h-100" />
+                      </div>
+             
+                  </div>
+
+                  <div class="col-lg-4">
+                      <div class="image-container">
+                          <img src="/node.png" class="h-100" />
+                      </div>
+                     
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="image-container">
+                          <img src="/vue.png" class="h-100" />
+                      </div>
+                     
+                  </div>
+
+                  <div class="col-lg-4">
+                      <div class="image-container">
+                         <img src="/codeigniter.png" class="h-100" />
+                      </div>
+                     
+                  </div>
+
+                  <div class="col-lg-4">
+                      <div class="image-container">
+                           <img src="/wordpress.png" class="h-100" />
+                      </div>
+                    
+                  </div>
+
+                  <div class="col-lg-4">
+                      <div class="image-container">
+                          <img src="/react.png" class="h-100" />
+                      </div>
+                     
+                  </div>
+
+                </div>
+            </div>
+          </section>
+
         </div>
     )
   }
