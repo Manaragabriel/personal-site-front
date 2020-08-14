@@ -69,45 +69,45 @@ function HomePage() {
 
           <section id="conhecimentos" class="py-5">
             <div class="container">
-                <h3  className={ 'text-center  font-weight-bold ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Conhecimentos</h3>
+                <h3  className={ 'text-center  font-weight-bold font-white ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Conhecimentos</h3>
                 <div class="row">
                   <div class="col-lg-4">
-                      <div class="image-container">
-                          <img src="/php.png" class="h-100" />
+                      <div class=" card image-container img-background" style={{"background-image": "url('/php.png')"}}>
+                         
                       </div>
              
                   </div>
 
                   <div class="col-lg-4">
-                      <div class="image-container">
-                          <img src="/node.png" class="h-100" />
+                      <div class="card text-center image-container img-background" style={{"background-image": "url('/node.png')"}}>
+                         
                       </div>
                      
                   </div>
 
                   <div class="col-lg-4">
-                    <div class="image-container">
+                    <div class="card text-center image-container">
                           <img src="/vue.png" class="h-100" />
                       </div>
                      
                   </div>
 
                   <div class="col-lg-4">
-                      <div class="image-container">
+                      <div class="card text-center image-container">
                          <img src="/codeigniter.png" class="h-100" />
                       </div>
                      
                   </div>
 
                   <div class="col-lg-4">
-                      <div class="image-container">
+                      <div class="card text-center image-container">
                            <img src="/wordpress.png" class="h-100" />
                       </div>
                     
                   </div>
 
                   <div class="col-lg-4">
-                      <div class="image-container">
+                      <div class="card text-center image-container">
                           <img src="/react.png" class="h-100" />
                       </div>
                      
