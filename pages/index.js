@@ -27,9 +27,9 @@ function HomePage() {
           <section id="about" class="d-flex align-items-center">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-6">
-                    <div class="image-container">
-                      <img class="h-100 slide-in-left" id="gabriel-photo" src="/eu.jpg" />
+                  <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="image-container-gabriel img-background rounded-circle"  style={{"background-image": "url('/eu.jpg')"}}>
+                      
                     </div>
                   </div>
                   <div class="col-lg-6">
