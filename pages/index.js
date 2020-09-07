@@ -1,12 +1,13 @@
 import Header from '../components/header';
+import Footer from '../components/footer';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneSquareAlt , faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons'
+import Head from 'next/head';
 
-
-function HomePage() {
+function HomePage({posts}) {
   const [isVisible,  setIsVisible] = useState({about: false, portifolio:false});
-  
+ 
   useEffect(function ()  {
       window.onscroll = onScroll
     
@@ -14,22 +15,32 @@ function HomePage() {
 
 
   const onScroll = (event) => {
-    console.log(document.documentElement.scrollTop)
+
     if(document.documentElement.scrollTop > 400){
       setIsVisible({portifolio:true});
     }
-    console.log(isVisible);
-  }
- 
 
+  }
   return (
         <div>
+          <Head>
+              <title>Gabriel Manara | Desenvolvedor</title>
+              <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+              <meta property="og:title" content="Gabriel Manara | Desenvolvedor" key="title" />
+              <meta name="author" content="Gabriel Manara" />
+              <meta name="description" content="Site oficial de Gabriel Manara, desenvolvedor Web" />
+              <meta name="keywords" content="sites, web, desenvolvimento, ecommerce, api, mobile, aplicativos, app" />
+              <meta property="og:author" content="Gabriel Manara" />
+              <meta property="og:description" content="Site oficial de Gabriel Manara, desenvolvedor Web" />
+              <meta property="og:keywords" content="sites, web, desenvolvimento, ecommerce, api, mobile, aplicativos, app" />
+           </Head>
+ 
           <Header/>
           <section id="about" class="d-flex align-items-center">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6 d-flex justify-content-center">
-                    <div class="image-container-gabriel img-background rounded-circle"  style={{"background-image": "url('/eu.jpg')"}}>
+                    <div class="image-container-gabriel img-background rounded-circle"  style={{"backgroundImage": "url('/eu.jpg')"}}>
                       
                     </div>
                   </div>
@@ -48,21 +59,25 @@ function HomePage() {
             <div class="container">
                 <h3  className={ 'text-center  font-weight-bold ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Meu portifólio</h3>
                 <div class="row">
-                  <div  className={ 'col-12 bg-white rounded p-2 ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>
-                     <div class="row">
-                        <div class="col-12 col-lg-3">
-                            <div class="image-container-valore text-center">
-                              <img class="h-100 slide-in-left" id="gabriel-photo" src="/valore.png" />
+                  <div  className={ 'col-lg-12  rounded  ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>
+                     
+                      <div className={'card p-2'}>
+                        <div class="row">
+                          <div class="col-12 col-lg-3">
+                                <div class="image-container-valore text-center">
+                                  <img alt="" class="h-100 slide-in-left" id="gabriel-photo" src="/valore.png" />
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-9">
+                                <h4 class="font-weight-bold">Desenvolvedor Web - NSC Valore(Trabalhando atualmente)</h4>
+                                <p>Exercendo a função de desenvolvedor web, no qual trabalho com as tecnologias PHP,Codeigniter, Wordpress, Node e Vue js
+                                  Trabalho prestando manutenção em sites, APP'S PWA e desenvolvendo Plugins para Wordpress
+                                </p>
                             </div>
                         </div>
-
-                        <div class="col-12 col-lg-9">
-                            <h4 class="font-weight-bold">Desenvolvedor Web - NSC Valore(Trabalhando atualmente)</h4>
-                            <p>Exercendo a função de desenvolvedor web, no qual trabalho com as tecnologias PHP,Codeigniter, Wordpress, Node e Vue js
-                              Trabalho prestando manutenção em sites, APP'S PWA e desenvolvendo Plugins para Wordpress
-                            </p>
-                        </div>
-                     </div>
+                      </div>
+                
                   </div>
                 </div>
             </div>
@@ -73,7 +88,7 @@ function HomePage() {
                 <h3  className={ 'text-center  font-weight-bold font-white ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Conhecimentos</h3>
                 <div class="row">
                   <div class="col-lg-4">
-                      <div class=" card image-container img-background" style={{"background-image": "url('/php.png')"}}>
+                      <div class=" card image-container img-background" style={{"background-image": "url('/laravel.png')"}}>
                          
                       </div>
              
@@ -88,28 +103,28 @@ function HomePage() {
 
                   <div class="col-lg-4">
                     <div class="card text-center image-container">
-                          <img src="/vue.png" class="h-100" />
+                          <img alt="" src="/vue.png" class="h-100" />
                       </div>
                      
                   </div>
 
                   <div class="col-lg-4">
                       <div class="card text-center image-container">
-                         <img src="/codeigniter.png" class="h-100" />
+                         <img alt="" src="/codeigniter.png" class="h-100" />
                       </div>
                      
                   </div>
 
                   <div class="col-lg-4">
                       <div class="card text-center image-container">
-                           <img src="/wordpress.png" class="h-100" />
+                           <img alt="" src="/wordpress.png" class="h-100" />
                       </div>
                     
                   </div>
 
                   <div class="col-lg-4">
                       <div class="card text-center image-container">
-                          <img src="/react.png" class="h-100" />
+                          <img alt="" src="/react.png" class="h-100" />
                       </div>
                      
                   </div>
@@ -126,7 +141,7 @@ function HomePage() {
 
                     <form>
                      <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                            <div className={'d-flex'}>
                               <span className={'font-40'}><FontAwesomeIcon  icon={ faPhoneSquareAlt}></FontAwesomeIcon></span>
                               <div className={'ml-2 mb-0 d-flex align-items-center'}>
@@ -135,14 +150,23 @@ function HomePage() {
 
                            </div>
 
-                           <div className={'d-flex'}>
+                           
+                        </div>
+
+                        <div class="col-lg-4">
+                          
+                            <div className={'d-flex'}>
 
                               <span className={'font-40'}><FontAwesomeIcon  icon={ faEnvelope }></FontAwesomeIcon></span>
                               <div className={'ml-2 mb-0 d-flex align-items-center'}>
                                   <a className={'font-weight-bold'} href="mailto:gabrielmanara2010@hotmail.com">gabrielmanara2010@hotmail.com</a>
                               </div>
 
-                           </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
 
                            <div className={'d-flex'}>
                              
@@ -152,45 +176,10 @@ function HomePage() {
                              </div>
 
                           </div>
-                           
+
                         </div>
-                        <div class="col-lg-6">
-                            <div class="col-lg-12">
-                              <div class="form-group">
-                                  <label class="font-weight-bold" htmlFor={"name"}>Digite seu nome:</label>
-                                  <input type="text" class="form-control form-control-border" name="name" id="name"/>
-                              </div>
-                          </div>
-                          <div class="col-lg-12">
-                              <div class="form-group">
-                                  <label class="font-weight-bold" htmlFor={"email"}>Digite seu email:</label>
-                                  <input type="email" class="form-control form-control-border" name="email" id="email"/>
-                              </div>
-                          </div>
-                          <div class="col-lg-12">
-                              <div class="form-group">
-                                  <label class="font-weight-bold" htmlFor={"phone"}>Digite seu telefone:</label>
-                                  <input type="text" class="form-control form-control-border" name="phone" id="phone"/>
-                              </div>
-                          </div>
-                          <div class="col-lg-12">
-                              <div class="form-group">
-                                  <label class="font-weight-bold" htmlFor={"location"}>Sua localização:</label>
-                                  <input type="text" class="form-control form-control-border" name="location" id="location"/>
-                              </div>
-                          </div>
-                          <div class="col-lg-12">
-                              <div class="form-group">
-                                  <label class="font-weight-bold" htmlFor={"message"}>Mensagem:</label>
-                                  <textarea  class="form-control form-control-border" name="message" id="message"></textarea>
-                              </div>
-                          </div>
-                          <div class="text-right col-12">
-                              <div class="form-group">
-                                <input type="submit" class="btn bg-dark" value="Enviar"/>
-                              </div>
-                          </div>
-                        </div>
+
+
                      </div>
 
                     </form>
@@ -198,8 +187,43 @@ function HomePage() {
                 </div>
           </section>
 
+          <section id="blog" class="p-5">
+              <div class="container">
+                <h3  className={ 'text-center  font-weight-bold ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Blog!</h3>
+                <div class="row">
+                  {posts.data.map((value) => {
+                
+                    return (
+                      <div class="col-lg-4">
+                        <div class="card p-3">
+                          <div class="image-container">
+                                <img alt="" src={'http://gabriel-manara-api.herokuapp.com/uploads/'+value.image} class="h-100" />
+                            </div>
+                            <a class="font-weight-bold h4" href={'blog/'+value.title.replace(/\s+/g,'-')+'/'+value.id}>{value.title}</a>
+                            <br/>
+                            <a class="btn btn-default" href={'blog/'+value.title.replace(/\s+/g,'-')+'/'+value.id}>Leia mais</a>
+                        </div>
+                      </div>
+                    )
+
+                  } )}
+
+                  
+                </div>
+              </div>
+          </section>
+          
+          <Footer />
+
         </div>
     )
   }
-  
+
+  HomePage.getInitialProps = async (ctx) => {
+    const res = await fetch('http://gabriel-manara-api.herokuapp.com/api/post/')
+    const json = await res.json()
+    console.log(">>>>>>>>>>>>>>>>>>>>>",json)
+    return { posts: json }
+  }
+ 
   export default HomePage

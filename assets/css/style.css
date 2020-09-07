@@ -33,6 +33,20 @@ a{
     min-height: 94vh;
     background-color: #1b1d1f;
 }
+#footer{
+  min-height: 10vh;
+  background-color: #1b1d1f;
+}
+#blog-title{
+  min-height: 34vh;
+  background-color: #1b1d1f;
+}
+
+#content{
+  min-height: 34vh;
+
+}
+
 .font-40{
   font-size: 40px;
 }
@@ -41,7 +55,7 @@ a{
   
 }
 #contact{
-  min-height: 74vh;
+  
   background-color: #1b1d1f;
 }
 .navbar{
