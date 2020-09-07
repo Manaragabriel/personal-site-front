@@ -31,7 +31,7 @@ function BlogPage({post}) {
             <section id="blog-title" class="d-flex align-items-center">
               <div class="container">
               
-                  <h2 class="font-weight-bold text-white">{post.title}</h2>
+                  <h2 class="font-weight-bold text-white mt-80">{post.title}</h2>
                   <h4 class="font-weight-bold text-white m-0">{post.subtitle}</h4>
             
             

@@ -40,7 +40,7 @@ function HomePage({posts}) {
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6 d-flex justify-content-center">
-                    <div class="mt-80 image-container-gabriel img-background rounded-circle"  style={{"backgroundImage": "url('/eu.jpg'); background-repeat: no-repeat"}}>
+                    <div class="mt-80 image-container-gabriel img-background rounded-circle"  style={{"background": "url('/eu.jpg')" ,"backgroundRepeat": "no-repeat", "backgroundSize": "cover","backgroundPosition": "center"}}>
                       
                     </div>
                   </div>
