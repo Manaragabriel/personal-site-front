@@ -116,7 +116,7 @@ textarea.form-control{
 }
 #gabriel-photo{
      border-radius: 100% !important;
-     object-fit: cover;
+   
 }
 
 #conhecimentos{
@@ -125,7 +125,11 @@ textarea.form-control{
 
 @media  (min-width: 992px){
   .mt-80{
-    margin-top: 0px
+    margin-top: 0px;
+  }
+  #gabriel-photo{
+    border-radius: 100% !important;
+    object-fit: cover;  
   }
 }
 /* ----------------------------------------------
