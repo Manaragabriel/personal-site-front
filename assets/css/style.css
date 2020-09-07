@@ -97,8 +97,9 @@ textarea.form-control{
 
 .img-background{
   background-position: center;
-    background-size: cover;
-
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  
 }
 
 .image-container{
@@ -114,7 +115,7 @@ textarea.form-control{
   height: 125px;
 }
 #gabriel-photo{
-     border-radius: 135px !important;
+     border-radius: 100% !important;
 }
 
 #conhecimentos{
