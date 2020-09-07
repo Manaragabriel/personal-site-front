@@ -31,19 +31,19 @@ export default function header(){
                 <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink href="#about">Sobre mim</NavLink>
+                        <NavLink href="/#about">Sobre mim</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#portifolio">Portifólio</NavLink>
+                        <NavLink href="/#portifolio">Portifólio</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#conhecimentos">Conhecimentos</NavLink>
+                        <NavLink href="/#conhecimentos">Conhecimentos</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#contact">Contato</NavLink>
+                        <NavLink href="/#contact">Contato</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#blog">Blog</NavLink>
+                        <NavLink href="/#blog">Blog</NavLink>
                     </NavItem>
                 
                 </Nav>
