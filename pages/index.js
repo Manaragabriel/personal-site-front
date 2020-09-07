@@ -197,7 +197,7 @@ function HomePage({posts}) {
                       <div class="col-lg-4">
                         <div class="card p-3">
                           <div class="image-container">
-                                <img alt="" src={'http://gabriel-manara-api.herokuapp.com/uploads/'+value.image} class="h-100" />
+                                <img alt="" src={'http://gabriel-manara-api.herokuapp.com/uploads/'+value.image} class="h-100 object-cover" />
                             </div>
                             <a class="font-weight-bold h4" href={'blog/'+value.title.replace(/\s+/g,'-')+'/'+value.id}>{value.title}</a>
                             <br/>

@@ -122,7 +122,9 @@ textarea.form-control{
 #conhecimentos{
   background: repeating-linear-gradient(45deg, #00A0FF, #628BE9);
 }
-
+.object-cover{
+  object-fit: cover;
+}
 @media  (min-width: 992px){
   .mt-80{
     margin-top: 0px;
