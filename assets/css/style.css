@@ -116,6 +116,7 @@ textarea.form-control{
 }
 #gabriel-photo{
      border-radius: 100% !important;
+     object-fit: cover;
 }
 
 #conhecimentos{
