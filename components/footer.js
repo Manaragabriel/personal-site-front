@@ -21,7 +21,7 @@ export default function header(){
 
     return (
         <footer id="footer" class="d-flex justify-content-center align-items-center">
-            <p class="text-white">Contato: <a class="text-white" href="mailto:gabrielmanara2010@hotmail.com">gabrielmanara2010@hotmail.com</a></p>
+            <p class="text-white font-14">Contato: <a class="text-white" href="mailto:gabrielmanara2010@hotmail.com">gabrielmanara2010@hotmail.com</a></p>
            
         </footer>
     )

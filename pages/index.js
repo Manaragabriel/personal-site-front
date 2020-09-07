@@ -36,11 +36,11 @@ function HomePage({posts}) {
            </Head>
  
           <Header/>
-          <section id="about" class="d-flex align-items-center">
+          <section id="about" class="d-flex align-items-center ">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6 d-flex justify-content-center">
-                    <div class="image-container-gabriel img-background rounded-circle"  style={{"backgroundImage": "url('/eu.jpg')"}}>
+                    <div class="mt-80 image-container-gabriel img-background rounded-circle"  style={{"backgroundImage": "url('/eu.jpg'); background-repeat: no-repeat"}}>
                       
                     </div>
                   </div>
@@ -133,10 +133,10 @@ function HomePage({posts}) {
             </div>
           </section>
 
-          <section id="contact" class="p-5">
+          <section id="contact" class="p-3">
                 <div class="container">
                   <h3  className={ 'text-center  font-weight-bold font-white ' + (isVisible.portifolio ? 'visible slide-in-right ' : 'invisible')  }>Entre em contato comigo!</h3>
-                  <div class="col-lg-12 bg-white-low-blue rounded py-3">
+                  <div class="col-lg-12 p-2 bg-white-low-blue rounded py-3">
                     <p>Precisa de um site, um ecommerce ou algum sistema? Venha conversar comigo, <span class="font-weight-bold">FAÇO CONSULTORIA GRÁTIS</span> </p>
 
                     <form>
